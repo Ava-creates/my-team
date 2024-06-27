@@ -1,0 +1,68 @@
+/* Timeline.css */
+
+.timeline-container {
+    background-color: #AEC289; /* Mint sage green color */
+    padding: 20px;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .timeline-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh; /* Ensure the wrapper takes full height of viewport */
+  }
+  
+  .timeline {
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure timeline takes full width of the container */
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background: #FFFFFF;
+  }
+  
+
+  span {
+    background: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/heart-512.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: heartAnimation 6s linear;
+    pointer-events: none;
+  }
+  
+  @keyframes heartAnimation {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0);
+    }
+    100%{
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+      filter: hue-rotate(720deg);
+    }
+  }
