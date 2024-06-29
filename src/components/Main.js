@@ -2,7 +2,7 @@ import React from "react"
 import Timeline from "./Timeline"
 export default function Main() {
     const scrollToSecondPage = () => {
-        document.getElementById('second-page').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('third-page').scrollIntoView({ behavior: 'smooth' });
       };
     
     return (
@@ -15,7 +15,7 @@ export default function Main() {
               <path class="a2" d="M0 20 L30 52 L60 20"></path>
               <path class="a3" d="M0 40 L30 72 L60 40"></path>
      </svg>
-     <div id="second-page"><Timeline /></div>
+     {/* <div id="second-page"><Timeline /></div> */}
      <div id="third-page">   
         <div className="photo-grid">
             <img src={require("./images/a.JPG")} alt="Photo 1" className="photo"/>
