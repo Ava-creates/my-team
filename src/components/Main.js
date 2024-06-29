@@ -22,6 +22,8 @@ export default function Main() {
             <img src={require('./images/IMG_0354 Small.jpeg')} className="photo"/>
             <img src={require("./images/IMG_0969 Medium.jpeg")} alt="Photo 3" className="photo"/>
             <img src={require("./images/n.jpeg")} alt="Photo 1" className="photo"/>
+            <img src={require("./images/w.jpeg")} alt="Photo 1" className="photo"/>
+            <img src={require("./images/hi.jpeg")} alt="Photo 1" className="photo"/>
         </div>
     </div>
 
