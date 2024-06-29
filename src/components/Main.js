@@ -7,7 +7,7 @@ export default function Main() {
     
     return (
     <>
-    <div className="first-page">Happy Birthday!</div>
+    <div className="first-page">Happy Birthday Mummy!</div>
 
 
     <svg class="arrows" onClick={scrollToSecondPage}>
@@ -16,6 +16,13 @@ export default function Main() {
               <path class="a3" d="M0 40 L30 72 L60 40"></path>
      </svg>
      <div id="second-page"><Timeline /></div>
+     <div id="third-page">   
+        <div className="photo-grid">
+            <img src={require("./images/a.JPG")} alt="Photo 1" className="photo"/>
+            <img src={require('./images/IMG_0354 Small.jpeg')} className="photo"/>
+            <img src={require("./images/IMG_0969 Medium.jpeg")} alt="Photo 3" className="photo"/>
+        </div>
+    </div>
 
     </>)
 }
